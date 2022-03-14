@@ -1,0 +1,9 @@
+void intToBin(int n, char* binary, int binary_size){
+    int pos = binary_size - 1;
+    
+    while(n > 0){
+        binary[pos] = n % 2 ? '1' : '0';
+        n /= 2;
+        pos -= 1;
+    }
+}
